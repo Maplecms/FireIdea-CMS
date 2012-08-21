@@ -61,7 +61,7 @@ class EnumAPI {
 	public static function getSelect($type,$name,$select_value)
 	{
 		$typelist=EnumAPI::getTypeList($type);
-		return show_select($name,$typelist,"name","value",$select_value);
+		return getSelectHtml($name,$typelist,"name","value",$select_value);
 	}
 	//获取枚举对应值
 	public static function getName($type,$value)
