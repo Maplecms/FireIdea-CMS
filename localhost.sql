@@ -1,19 +1,5 @@
--- phpMyAdmin SQL Dump
--- version 3.3.9
--- http://www.phpmyadmin.net
---
--- 主机: localhost
--- 生成日期: 2012 年 04 月 28 日 07:27
--- 服务器版本: 5.5.8
--- PHP 版本: 5.3.5
-
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+SET NAMES utf8;
 
 --
 -- 数据库: `ficms`
@@ -160,31 +146,38 @@ CREATE TABLE IF NOT EXISTS `fi_menu` (
 --
 
 INSERT INTO `fi_menu` (`id`, `name`, `shortkey`, `type`, `module`, `action`, `parent`, `displayorder`) VALUES
-(1, 'L_ADMIN_HOME', 'ADMIN_HOME', 'admin_menu', 'Index', 'index', '', 0),
-(2, 'L_ADMIN_HOME', 'ADMIN_HOME_GROUP', 'admin_menu', '', '', 'ADMIN_HOME', 0),
-(3, 'L_ADMIN_INFO', 'ADMIN_INFO', 'admin_menu', 'Index', 'index', 'ADMIN_HOME_GROUP', 0),
-(4, 'L_SYSTEM_MANAGE', 'SYSTEM_MANAGE', 'admin_menu', 'System', 'index', 'ADMIN_HOME_GROUP', 0),
-(5, 'L_COPYRIGHT', 'ADMIN_COPYRIGHT', 'admin_menu', 'Copyright', 'index', 'ADMIN_HOME_GROUP', 0),
-(6, 'L_DATA_MANAGE', 'DATA_MANAGE', 'admin_menu', 'Data', 'index', '', 0),
-(7, 'L_CHANNEL_MANAGE', 'CHANNEL_MANAGE', 'admin_menu', 'Channel', 'index', '', 0),
-(8, 'L_CHANNEL_MANAGE', 'CHANNEL_MANAGE_GROUP', 'admin_menu', '', '', 'CHANNEL_MANAGE', 0),
-(9, 'L_TEMPLATE_MANAGE', 'TEMPLATE_MANAGE', 'admin_menu', 'Template', 'index', '', 0),
-(10, 'L_TEMPLATE_MANAGE', 'TEMPLATE_MANAGE_GROUP', 'admin_menu', '', '', 'TEMPLATE_MANAGE', 0),
-(11, 'L_MODULE_MANAGE', 'MODULE_MANAGE', 'admin_menu', 'Module', 'index', '', 0),
-(12, 'L_MODULE_MANAGE', 'MODULE_MANAGE_GROUP', 'admin_menu', '', '', 'MODULE_MANAGE', 0),
-(13, 'L_MODULE_CONFIG', 'MODULE_CONFIG', 'admin_menu', 'Module', 'index', 'MODULE_MANAGE_GROUP', 0),
-(14, 'L_PLUGIN_MANAGE', 'PLUGIN_MANAGE', 'admin_menu', 'Enum', 'index', '', 0),
-(15, 'L_PLUGIN_MANAGE', 'PLUGIN_MANAGE_GROUP', 'admin_menu', '', '', 'PLUGIN_MANAGE', 0),
-(16, 'L_PLUGIN_ENUM_MANAGE', 'PLUGIN_ENUM_MANAGE', 'admin_menu', 'Enum', 'index', 'PLUGIN_MANAGE_GROUP', 0),
-(17, 'L_PLUGIN_CATGORY_MANAGE', 'PLUGIN_CATGORY_MANAGE', 'admin_menu', 'Category', 'index', 'PLUGIN_MANAGE_GROUP', 0),
-(18, 'L_PLUGIN_TAG_MANAGE', 'PLUGIN_TAG_MANAGE', 'admin_menu', 'Tag', 'index', 'PLUGIN_MANAGE_GROUP', 0),
-(19, 'L_PLUGIN_ATTR_MANAGE', 'PLUGIN_ATTR_MANAGE', 'admin_menu', 'Attr', 'index', 'PLUGIN_MANAGE_GROUP', 0),
-(20, 'L_PLUGIN_FILE_MANAGE', 'PLUGIN_FILE_MANAGE', 'admin_menu', 'File', 'index', 'PLUGIN_MANAGE_GROUP', 0),
-(21, 'L_PLUGIN_MAIL_MANAGE', 'PLUGIN_MAIL_MANAGE', 'admin_menu', 'File', 'index', 'PLUGIN_MANAGE_GROUP', 0),
-(22, 'L_PLUGIN_PAY', 'PLUGIN_PAY_GROUP', 'admin_menu', '', '', 'PLUGIN_MANAGE', 0),
-(23, 'L_PLUGIN_PAY_CONFIG', 'PLUGIN_PAY_CONFIG', 'admin_menu', 'Pay', 'index', 'PLUGIN_PAY_GROUP', 0),
-(24, 'L_PLUGIN_PAY_HISTORY_MANAGE', 'PLUGIN_PAY_HISTORY_MANAGE', 'admin_menu', 'PayHistory', 'index', 'PLUGIN_PAY_GROUP', 0),
-(25, 'L_ACCOUNT_MANAGE', 'ACCOUNT_MANAGE', 'admin_menu', 'Account', 'index', '', 0);
+(NULL, 'L_ADMIN_HOME', 'ADMIN_HOME', 'admin_menu', 'Index', 'index', '', 0),
+(NULL, 'L_ADMIN_HOME', 'ADMIN_HOME_GROUP', 'admin_menu', '', '', 'ADMIN_HOME', 0),
+(NULL, 'L_ADMIN_INFO', 'ADMIN_INFO', 'admin_menu', 'Index', 'index', 'ADMIN_HOME_GROUP', 0),
+(NULL, 'L_SYSTEM_MANAGE', 'SYSTEM_MANAGE', 'admin_menu', 'System', 'index', 'ADMIN_HOME_GROUP', 0),
+(NULL, 'L_COPYRIGHT', 'ADMIN_COPYRIGHT', 'admin_menu', 'Copyright', 'index', 'ADMIN_HOME_GROUP', 0),
+
+(NULL, 'L_DATA_MANAGE', 'DATA_MANAGE', 'admin_menu', 'Data', 'index', '', 0),
+
+(NULL, 'L_CHANNEL_MANAGE', 'CHANNEL_MANAGE', 'admin_menu', 'Channel', 'index', '', 0),
+(NULL, 'L_CHANNEL_MANAGE', 'CHANNEL_MANAGE_GROUP', 'admin_menu', '', '', 'CHANNEL_MANAGE', 0),
+(NULL, 'L_CHANNEL_MANAGE', 'CHANNEL_MANAGE_CONFIG', 'admin_menu', 'Channel', 'index', 'CHANNEL_MANAGE_GROUP', 0),
+
+(NULL, 'L_TEMPLATE_MANAGE', 'TEMPLATE_MANAGE', 'admin_menu', 'Template', 'index', '', 0),
+(NULL, 'L_TEMPLATE_MANAGE', 'TEMPLATE_MANAGE_GROUP', 'admin_menu', '', '', 'TEMPLATE_MANAGE', 0),
+
+(NULL, 'L_MODULE_MANAGE', 'MODULE_MANAGE', 'admin_menu', 'Module', 'index', '', 0),
+(NULL, 'L_MODULE_MANAGE', 'MODULE_MANAGE_GROUP', 'admin_menu', '', '', 'MODULE_MANAGE', 0),
+(NULL, 'L_MODULE_CONFIG', 'MODULE_CONFIG', 'admin_menu', 'Module', 'index', 'MODULE_MANAGE_GROUP', 0),
+
+(NULL, 'L_PLUGIN_MANAGE', 'PLUGIN_MANAGE', 'admin_menu', 'Enum', 'index', '', 0),
+(NULL, 'L_PLUGIN_MANAGE', 'PLUGIN_MANAGE_GROUP', 'admin_menu', '', '', 'PLUGIN_MANAGE', 0),
+(NULL, 'L_PLUGIN_ENUM_MANAGE', 'PLUGIN_ENUM_MANAGE', 'admin_menu', 'Enum', 'index', 'PLUGIN_MANAGE_GROUP', 0),
+(NULL, 'L_PLUGIN_CATGORY_MANAGE', 'PLUGIN_CATGORY_MANAGE', 'admin_menu', 'Category', 'index', 'PLUGIN_MANAGE_GROUP', 0),
+(NULL, 'L_PLUGIN_TAG_MANAGE', 'PLUGIN_TAG_MANAGE', 'admin_menu', 'Tag', 'index', 'PLUGIN_MANAGE_GROUP', 0),
+(NULL, 'L_PLUGIN_ATTR_MANAGE', 'PLUGIN_ATTR_MANAGE', 'admin_menu', 'Attr', 'index', 'PLUGIN_MANAGE_GROUP', 0),
+(NULL, 'L_PLUGIN_FILE_MANAGE', 'PLUGIN_FILE_MANAGE', 'admin_menu', 'File', 'index', 'PLUGIN_MANAGE_GROUP', 0),
+(NULL, 'L_PLUGIN_MAIL_MANAGE', 'PLUGIN_MAIL_MANAGE', 'admin_menu', 'File', 'index', 'PLUGIN_MANAGE_GROUP', 0),
+(NULL, 'L_PLUGIN_PAY', 'PLUGIN_PAY_GROUP', 'admin_menu', '', '', 'PLUGIN_MANAGE', 0),
+(NULL, 'L_PLUGIN_PAY_CONFIG', 'PLUGIN_PAY_CONFIG', 'admin_menu', 'Pay', 'index', 'PLUGIN_PAY_GROUP', 0),
+(NULL, 'L_PLUGIN_PAY_HISTORY_MANAGE', 'PLUGIN_PAY_HISTORY_MANAGE', 'admin_menu', 'PayHistory', 'index', 'PLUGIN_PAY_GROUP', 0),
+
+(NULL, 'L_ACCOUNT_MANAGE', 'ACCOUNT_MANAGE', 'admin_menu', 'Account', 'index', '', 0);
 
 -- --------------------------------------------------------
 
